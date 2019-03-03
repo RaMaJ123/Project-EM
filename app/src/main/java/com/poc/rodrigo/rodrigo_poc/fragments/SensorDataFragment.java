@@ -105,8 +105,7 @@ public class SensorDataFragment extends Fragment implements SensorEventListener{
 
         lat.setText("Latitude: " + latitude);
         longi.setText("Longitude: " + longitude);
-
-
+        Log.d(TAG,"Lat: "  + latitude + "long: " + latitude );
 
         return view;
     }
@@ -116,27 +115,27 @@ public class SensorDataFragment extends Fragment implements SensorEventListener{
         Sensor sensor = sensorEvent.sensor;
 
         if(sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
-            //Log.d(TAG, "Accelerometer dataonSensorChanged: X Value: " + sensorEvent.values[0] + "Y Value :" + sensorEvent.values[1] + "Z Value :" + sensorEvent.values[2]);
+            Log.d(TAG, "Accelerometer dataonSensorChanged: X Value: " + sensorEvent.values[0] + "Y Value :" + sensorEvent.values[1] + "Z Value :" + sensorEvent.values[2]);
             accelerometerXValue.setText("xValue :" + sensorEvent.values[0]);
             accelerometerYValue.setText("yValue :" + sensorEvent.values[1]);
             accelerometerZValue.setText("ZValue :" + sensorEvent.values[2]);
 
         } else if(sensor.getType() == Sensor.TYPE_GYROSCOPE) {
-//            Log.d(TAG, "Gyroscope dataonSensorChanged: X Value:" + sensorEvent.values[0] + "Y Value :" + sensorEvent.values[1] + "Z Value :" + sensorEvent.values[2]);
+            Log.d(TAG, "Gyroscope dataonSensorChanged: X Value:" + sensorEvent.values[0] + "Y Value :" + sensorEvent.values[1] + "Z Value :" + sensorEvent.values[2]);
             gyroscopeXValue.setText("xValue :" + sensorEvent.values[0]);
             gyroscopeYValue.setText("yValue :" + sensorEvent.values[1]);
             gyroscopeZValue.setText("ZValue :" + sensorEvent.values[2]);
 
         } else if(sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
-  //          Log.d(TAG, "Magnetic Field Sensor data onSensorChanged: X Value:" + sensorEvent.values[0] + "Y Value :" + sensorEvent.values[1] + "Z Value :" + sensorEvent.values[2]);
+            Log.d(TAG, "Magnetic Field Sensor data onSensorChanged: X Value:" + sensorEvent.values[0] + "Y Value :" + sensorEvent.values[1] + "Z Value :" + sensorEvent.values[2]);
             magnometerXValue.setText("xValue :" + sensorEvent.values[0]);
             magnometerYValue.setText("yValue :" + sensorEvent.values[1]);
             magnometerZValue.setText("ZValue :" + sensorEvent.values[2]);
         } else if(sensor.getType() == Sensor.TYPE_PRESSURE) {
-    //        Log.d(TAG, "Pressure data onSensorChanged Value :" + sensorEvent.values[0]);
+            Log.d(TAG, "Pressure data onSensorChanged Value :" + sensorEvent.values[0]);
             pressureValue.setText("Pressure: " + sensorEvent.values[0]);
         } else if(sensor.getType() == Sensor.TYPE_LIGHT) {
-      //      Log.d(TAG, "Light data onSensorChanged: Value:" + sensorEvent.values[0]);
+            Log.d(TAG, "Light data onSensorChanged: Value:" + sensorEvent.values[0]);
             lightValue.setText("Light: " + sensorEvent.values[0]);
         }
     }
