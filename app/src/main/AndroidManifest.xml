@@ -41,6 +41,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.HomeActivity"></activity>
+
+        <service android:enabled="true" android:name="service.GPSTracker" />
     </application>
+
+
 
 </manifest>

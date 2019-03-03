@@ -23,4 +23,7 @@
     <string name="pressure">Pressure :</string>
     <string name="light">Light: </string>
     <string name="CurrentTime">System Time:</string>
+
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
 </resources>
