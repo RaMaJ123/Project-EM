@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sensorDataTitle"
+        android:textSize="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView3" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/accelerometerLayout">
+
+    <TextView
+        android:id="@+id/accelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="@string/accelerometer" />
+
+    <TextView
+        android:id="@+id/accelerometerXValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/accelerometer"
+        android:layout_below="@+id/accelerometer"
+        android:layout_marginTop="25dp"
+        android:textSize="16dp"
+        android:text="@string/accelerometerXValue" />
+
+    <TextView
+        android:id="@+id/accelerometerYValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/accelerometerZValue"
+        android:layout_alignBottom="@+id/accelerometerZValue"
+        android:layout_toEndOf="@+id/accelerometer"
+        android:text="@string/accelerometerYValue"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/accelerometerZValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/accelerometerXValue"
+        android:layout_alignBottom="@+id/accelerometerXValue"
+        android:layout_alignParentEnd="true"
+        android:text="@string/accelerometerZValue"
+        android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/accelerometerLayout"
+        android:id="@+id/GyroscopeLayout">
+
+        <TextView
+            android:id="@+id/gyroscope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="@string/gyroscope" />
+
+        <TextView
+            android:id="@+id/gyroscopeXValue"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/gyroscope"
+            android:layout_below="@+id/gyroscope"
+            android:layout_marginTop="25dp"
+            android:textSize="16dp"
+            android:text="@string/gyroscopeXValue" />
+
+        <TextView
+            android:id="@+id/gyroscopeYValue"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/gyroscopeXValue"
+            android:layout_alignBottom="@+id/gyroscopeXValue"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/gyroscopeXValue"
+            android:text="@string/gyroscopeYValue"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/gyroscopeZValue"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/gyroscopeXValue"
+            android:layout_alignBottom="@+id/gyroscopeXValue"
+            android:layout_alignParentEnd="true"
+            android:text="@string/gyroscopeZValue"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/GyroscopeLayout"
+        android:id="@+id/magnetometerLayout">
+
+        <TextView
+            android:id="@+id/magnometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="@string/magnometer" />
+
+        <TextView
+            android:id="@+id/magnoMeterXValue"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/magnometer"
+            android:layout_below="@+id/magnometer"
+            android:layout_marginTop="25dp"
+            android:textSize="16dp"
+            android:text="@string/magnometerXValue" />
+
+        <TextView
+            android:id="@+id/magnoMeterYValue"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/magnoMeterXValue"
+            android:layout_alignBottom="@+id/magnoMeterXValue"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/magnometer"
+            android:text="@string/magnometerYValue"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/magnoMeterZValue"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/magnoMeterXValue"
+            android:layout_alignBottom="@+id/magnoMeterXValue"
+            android:layout_alignParentEnd="true"
+            android:text="@string/magnometerZValue"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/magnetometerLayout"
+        android:layout_marginTop="10dp"
+        android:id="@+id/timePressureLight">
+
+    <TextView
+        android:id="@+id/clockTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/light"
+        android:layout_below="@+id/light"
+        android:layout_marginTop="22dp"
+        android:text="@string/CurrentTime"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+        <TextClock
+            android:id="@+id/textClock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/clockTime"
+            android:layout_alignBottom="@+id/clockTime"
+            android:layout_alignStart="@+id/clockTime"
+            android:layout_marginStart="170dp"
+            android:format12Hour="EEE MMM dd yyyy hh:mm:ss"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pressure"
+            android:layout_below="@+id/pressure"
+            android:layout_marginTop="24dp"
+            android:text="@string/light"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/pressure"
+        android:textSize="16dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Project EM</string>
+
+    <string name="mapFragment">Map will come here</string>
+    <string name="sensorData">Inflate sensor data</string>
+    <string name="mapTitle">MAP</string>
+    <string name="sensorDataTitle">SENSOR DATA</string>
+    <string name="accelerometer">Accelerometer:</string>
+    <string name="accelerometerXValue">X:</string>
+    <string name="accelerometerYValue">Y:</string>
+    <string name="accelerometerZValue">Z:</string>
+
+    <string name="gyroscope">Gyroscope:</string>
+    <string name="gyroscopeXValue">X:</string>
+    <string name="gyroscopeYValue">Y:</string>
+    <string name="gyroscopeZValue">Z:</string>
+
+    <string name="magnometer">Magnometer:</string>
+    <string name="magnometerXValue">X:</string>
+    <string name="magnometerYValue">Y:</string>
+    <string name="magnometerZValue">Z:</string>
+
+    <string name="pressure">Pressure :</string>
+    <string name="light">Light: </string>
+    <string name="CurrentTime">System Time:</string>
+</resources>

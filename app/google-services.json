@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "994693628252",
+    "firebase_url": "https://poc-rodrigo.firebaseio.com",
+    "project_id": "poc-rodrigo",
+    "storage_bucket": "poc-rodrigo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994693628252:android:90dfcf2ffde04a50",
+        "android_client_info": {
+          "package_name": "com.poc.rodrigo.rodrigo_poc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994693628252-j609mub199rbh6bemn7qcaprvu1q5c50.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.poc.rodrigo.rodrigo_poc",
+            "certificate_hash": "3ea327a4efdafd64281212a93e6a4771e7fa3677"
+          }
+        },
+        {
+          "client_id": "994693628252-kcqcgv6eab9k7gm55j898b3vnusjo7td.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh1mnTOa2oD3LPOyf_To29IixctJcJSsI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994693628252-ln2p7d3nfp5mo9vhl5hg7mi1usmk8334.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
